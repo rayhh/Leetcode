@@ -6,7 +6,7 @@ public:
 		ListNode* slow = head;
 		ListNode* fast = head;
 
-    std::function<void(ListNode*)> dfs=[&](ListNode* fast){        //回溯算法+递归
+    std::function<void(ListNode*)> dfs=[&](ListNode* fast){        //回溯算法+递归lambda
 		    if (fast->next->next == nullptr) return;
 		    fast = fast->next;
 		    dfs(fast);
